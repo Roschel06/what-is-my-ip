@@ -8,7 +8,7 @@ function App() {
   useEffect(() => { 
     async function getData(){
     try {
-        const result = await fetch('https://geo.ipify.org/api/v2/country?apiKey=')
+        const result = await fetch(`https://geo.ipify.org/api/v2/country?apiKey=${process.env.REACT_APP_IP_KEY}`)
         const data = await result.json()
         setData(data)
       } 
@@ -17,10 +17,10 @@ function App() {
     }
   }getData()
   }, [])
-console.log(data.ip);
+
   return (
     <div className="App">
-      Hello World
+      <h1>Your IP is:<br/>{data.ip}</h1> 
     </div>
   );
 }
