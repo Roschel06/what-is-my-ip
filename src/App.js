@@ -66,22 +66,13 @@ function App() {
       <h2 className="myIp">{data?.location?.timezone}</h2>
       <h2 className="myIp">Capital of {data?.location?.country} is: {data2[85]?.capital}</h2>
       <h2 className="myIp">Flag: {data2[85]?.flag}</h2>
-      <div>Hee
+     {/* <div>Hee
       {data2.filter(data2 => data2.includes(data?.location?.country)).map(filteredName => (
         <div>
           {filteredName}
         </div>
       ))}
-    </div>
-
-
-
-
-
-
-
-
-    </div>
+    </div> */}
   );
 }
 
