@@ -9,7 +9,7 @@ import { useState, useEffect,Suspense } from "react";
         useEffect(() => { 
             async function getData(){
             try {
-                const result = await fetch('https://restcountries.com/v3.1/all?access_token=')
+                const result = await fetch('https://restcountries.com/v3.1/all?access_token=at_uTanxU4QwfUvFHmUMgeDa5dtRVHsE')
                 const data = await result.json()
                getData(data)
               } 
@@ -25,12 +25,12 @@ import { useState, useEffect,Suspense } from "react";
                     <div >
                         <p>
                             <span >Flag: </span>
-                            {data?.flags?.svg}
+                            {data.flags}
                         </p>
 
                         <p>
                             <span >Timezone: </span>
-                            {data?.timezones}
+                            {data.timezones}
                         </p>
                     </div>
         </div>
