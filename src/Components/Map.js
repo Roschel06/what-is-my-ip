@@ -7,6 +7,7 @@ export default function Map({country, ipAddressDict }) {
 
     console.log ("Map Info", country, ipAddressDict)
     const [zoom, setZoom] = useState(0);
+    const [data, setData] = useState({})
     useEffect(() => { 
         async function getData(){
         try {
@@ -27,23 +28,15 @@ export default function Map({country, ipAddressDict }) {
 
         country && ipAddressDict
         ?<div className="bg-black flex flex-col" >
-            <div>
-                <Time ipAddressDict={ipAddressDict}/>
-            </div>
-            <div>
-                {
-                <LeafletMap ipAddressDict={ipAddressDict} country={country} />
-                }
-            </div>
+          
+         
             <div className="h-100%">
-               <CanvasContainer>
-                    <Canvas>
+           
+              
                         <Suspense fallback={null}>
-                            <MyGlobe x={30} y={30} />    
+                            <Map x={30} y={30} />    
                         </Suspense>
-                    </Canvas>
-
-                 </CanvasContainer>
+                
             </div>
         </div>
     :<p>loading...</p>

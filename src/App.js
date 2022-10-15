@@ -33,7 +33,7 @@ console.log(data);
         {data.ip}
  
 
-
+<Map />
     <Flag />
     </div>
 
