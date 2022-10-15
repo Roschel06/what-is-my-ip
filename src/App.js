@@ -1,6 +1,5 @@
 import './App.css';
 import {useState, useEffect} from 'react'
-import CountryData from './CountryData';
 
 function App() {
 
