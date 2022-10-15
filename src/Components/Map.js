@@ -1,7 +1,7 @@
 
 import { useState, useEffect,Suspense } from "react";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
-
+import 'leaflet/dist/leaflet.css'
 
 
 export default function Map({country, ipAddressDict }) {
@@ -32,16 +32,12 @@ export default function Map({country, ipAddressDict }) {
          
         
            
-        <MapContainer center={[48.1351, 11.5820]} zoom={3} scrollWheelZoom={false} style={{ width: "30%", height: "50px" }}>
+        <MapContainer center={[51.2277, 6.7735]} zoom={8} scrollWheelZoom={false} style={{ width: "50%", height: "300px" }}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-      <Marker position={[48.1351, 11.5820]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker> 
+     
       </MapContainer>
     
                 
