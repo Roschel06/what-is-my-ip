@@ -15,7 +15,7 @@ function App() {
         const options = {
           method: 'GET',
           headers: {
-            'X-RapidAPI-Key': '1d8cdf63d3msh3ea544923f9d03ep1c3763jsn4bcbce8d7a15',
+            'X-RapidAPI-Key': '',
             'X-RapidAPI-Host': 'ip-geo-location.p.rapidapi.com'
           }
         };
