@@ -9,7 +9,7 @@ function App() {
   useEffect(() => { 
     async function getData(){
     try {
-        const result = await fetch('https://geo.ipify.org/api/v2/country,city?apiKey=at_EGwYfCYlI1HnNR1eIj99NMYdoDIsO')
+        const result = await fetch('https://geo.ipify.org/api/v2/country,city?apiKey=')
         const data = await result.json()
         
         const options = {
@@ -36,7 +36,7 @@ function App() {
         const options = {
           method: 'GET',
           headers: {
-            'X-RapidAPI-Key': '1d8cdf63d3msh3ea544923f9d03ep1c3763jsn4bcbce8d7a15',
+            'X-RapidAPI-Key': '',
             'X-RapidAPI-Host': 'ip-geo-location.p.rapidapi.com'
           }
         };
@@ -63,8 +63,8 @@ function App() {
       <h2 className="myIp">Region: {data?.location?.region}</h2>
       <h2 className="myIp">{data?.location?.country}</h2>
       <h2 className="myIp">{data?.location?.timezone}</h2>
-      <h2 className="myIp">Capital of {data?.location?.country} is: {data2[85]?.capital}</h2>
-      <h2 className="myIp">Flag: {data2[85]?.flag}</h2>
+      <h2 className="myIp">Capital of {data?.location?.country} is: {data2[]?.capital}</h2>
+      <h2 className="myIp">Flag: {data2[]?.flag}</h2>
      {/* <div>Hee
       {data2.filter(data2 => data2.includes(data?.location?.country)).map(filteredName => (
         <div>
@@ -77,5 +77,4 @@ function App() {
 
 export default App;
 
-//data.filter(item => item.alpha2Code === response.data.location.country (returns in array!)
 
