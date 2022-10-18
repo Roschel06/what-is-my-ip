@@ -5,6 +5,7 @@ import CountryDetail  from './components/CountryDetail'
 import { MapContainer } from 'react-leaflet';
 import Header from './components/Header';
 import Footer from './components/Footer'
+
 function App() {
 
   const [data, setData] = useState({})
@@ -46,6 +47,7 @@ function App() {
 					}
       )
           setData(data)
+        
       } 
     catch(error){
       console.log('This is a wrong path ', error.message)
@@ -102,6 +104,8 @@ function App() {
 
 export default App;
 
+
 //const result = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${env.REACT_APP_API_KEY}`)
+
 
 
