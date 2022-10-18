@@ -19,7 +19,7 @@ const Map= ({lat, lng}) => {
         
         <MapContainer 
         className='map'
-        center={[51.233334, 6.783333]} 
+        center={position} 
         zoom= {6} 
         zoomControl={false} 
         style={{ width: "500px" , height: "340px" }}>
