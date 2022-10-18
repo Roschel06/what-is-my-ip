@@ -1,47 +1,102 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');.App {
   text-align: center;
 }
+#root {
+  font-family: 'Quicksand', sans-serif;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.myIpText {
-  background-color: rgb(203 213 225);
+.myDetails {
+  margin:30px;
 }
 .App {
-  background-color: rgb(203 213 225);
-
-
+  background-image: url('./images/qingbao-meng-01_igFr7hd4-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: cover;
+  height: 690px;
 }
+
+.map {
+border:2px;
+height: 300px;
+border-color: #000000;}
+
+.container{
+height: 342px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-item: center;
+gap: 50px;
+}
+
+.countryDetails {
+background: #FFFFFF;
+padding:30px;
+text-align: left;
+color: #277fca;
+font-family: Inconsolata, sans serif;
+font-weight: 400;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-item: center;
+  list-style-type: none;
+  color: #277fca;
+  background: #FFFFFF;
+  opacity: 80%;
+  margin-bottom: 50px;
+  font-family: 'Nanum Gothic', sans-serif;  
+  font-weight: 400;
+  font-size: 1.5rem;
+  }
+
+  .headerList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 100px;
+  }
+
+  .logo{
+    height:80px;
+    width:80px;
+    margin-right:250px;
+    margin-top:10px;
+    margin-left:50px;
+  }
+
+  footer {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    opacity: 80%;
+    font-family: 'Nanum Gothic', sans-serif;    
+    font-weight: 400;
+    font-size: 1rem;  
+    color: #277fca;
+    margin-top: 50px;
+  }
+
+  .footerListElements {
+    list-style-type: none;
+    padding:10px;
+    margin-left:50px;
+  }
+
+  .smIcon {
+    
+    margin: 5px;
+    color: #277fca;
+  }
