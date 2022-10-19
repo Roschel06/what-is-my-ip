@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import { DateTime } from 'luxon';
 
-export default function Date() {
-    const current = new Date();
-    const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
-    const time = new Date();
-    const showTime = date.getHours() 
-        + ':' + time.getMinutes() 
-        + ":" + time.getSeconds();
-  
-    return (
-      <div className="App">
-        <h1>Current date is {date}</h1>
-      </div>
-    );
-  }
+const Date = () => {
+
+
+  const date = DateTime.now().setLocale('en').toLocaleString(DateTime.DATE_MED);
+
+  return (
+    <div>
+      <p className="date">{date}</p>
+    </div>
+  );
+};
+
+export default Date;

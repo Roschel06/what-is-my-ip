@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../images/IP.png'
+import Date from './Date'
 
 export default function Header() {
   return (
@@ -11,8 +12,9 @@ export default function Header() {
             <li>Home</li>
             <li>Weather</li>
             <li>Contact</li>
-
+            <Date />
         </ul>
+        
     </header>
   )
 }
