@@ -19,13 +19,14 @@ function App() {
   const [country, setCountry] = useState('');
   const [countryName, setCountryName] = useState('');
   const [flag, setFlag] = useState('');
+  const { REACT_APP_API_KEY }= process.env;
 
 
 
   useEffect(() => { 
     async function getData(){
     try {
-        const result = await fetch('https://geo.ipify.org/api/v2/country,city?apiKey=')
+        const result = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${REACT_APP_API_KEY}`)
 
         .then((res) => res.json())
         .then(
@@ -102,6 +103,5 @@ function App() {
 
 export default App;
 
-//const result = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${env.REACT_APP_API_KEY}`)
 
 
